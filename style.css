@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url("fontes/idroid.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+        font-family: bebas;
+        src: url("fontes/BebasNeue-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+}
+/*
+#C5EBD6
+#83E1AD
+#3DDC84
+#2FA866
+#1A5C37
+#063D1E
+*/
+:root{
+    --cor0:#C5EBD6;
+    --cor1:#83E1AD;
+    --cor2:#3DDC84;
+    --cor3:#2FA866;
+    --cor4:#1A5C37;
+    --cor5:#063D1E;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+    margin: 0px;
+    text-indent: 0.2cm;
+    min-width: 320px;
+}
+h1, h2{
+    font-family: 'android', Arial, Helvetica, sans-serif; 
+    margin: 0px;
+    padding: 10px;
+    text-shadow: 2px 0px 0px rgba(0, 0, 0, 0.562);
+    
+ }
+ p{
+    text-indent: 2cm;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 10px;
+ }
+img{
+    margin: auto;
+    display: block;
+ }
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding-top: 10px;
+    text-align: center;
+}
+header>h1{
+    color: white;
+    text-align: center;
+    text-indent: 0px;
+    font-family: 'bebas', Arial, Helvetica, sans-serif; 
+    font-size: 3em;
+    padding: 4px;
+    margin: 1cm auto 0.5cm auto;
+}
+header>p{
+    color: white;
+    text-align: center;
+    text-indent: 0px;
+    padding: 2px;
+    line-height: 1.6;
+}
+nav{
+    background-color: var(--cor5);
+    text-align: left;
+    padding: 3px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.322);/*sombra*/
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    padding: 10px;
+}
+nav> a:hover{
+    text-decoration: underline;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    padding: 4px;
+}
+main{
+    background-color: white;
+    padding: 0px;
+    padding-bottom: 3px;
+    margin: 0px auto 0px auto;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-radius: 0px 0px 5px 5px;  
+    max-width: 1000px;  
+}
+main >p, main >section >p {
+    line-height: 1.6;
+}
+main > h1, main > section >h2{
+    color: var(--cor5);
+    margin-left: 0.5cm;
+    text-indent: 0px;
+    padding: 10px;
+}
+main > section >h2{
+    color: var(--cor4);
+    background-image: linear-gradient(to right, #C5EBD6, white);
+    padding: 0px;
+}
+a.externo::after{
+    content: '\1F517';
+}
+ul{
+    width: 400px;
+    text-indent: 0px;
+    list-style-type: "\2705\00A0";/*Código do Emoji + código para inserir um espaço*/
+    list-style-position: inside;
+    columns: 2;
+}
+section > picture{
+    margin: auto;
+}
+section > aside >h2{
+    background-color: var(--cor4);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    margin-left: 0px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: none;
+}
+section > aside {
+    background-color: var(--cor2);
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+span, a {
+    font-weight: bold;
+    color: var(--cor5);
+    text-decoration: none;
+}
+div.video{/*criei uma div para referenciar o vídeo*/
+    background-color: var(--cor5);
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    padding-bottom: 54.3%;
+    position: relative;
+}
+div.video >iframe{ /*o vídeo usa a referência da div por trás*/
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+footer >p {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    text-indent: 0px;
+}
